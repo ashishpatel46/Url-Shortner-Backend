@@ -37,10 +37,12 @@ app.get("/:id",redirectFromShortUrl)
 
 app.use(errorHandler)
 
-app.listen(3000,()=>{
-    connectDB()
-    console.log("Server is running on http://localhost:3000");
-})
+// app.listen(3000,()=>{
+//     connectDB()
+//     console.log("Server is running on http://localhost:3000");
+// })
+   connectDB()
+   export default app;
 
 app.get("/",(req, res)=>{
    return res.send("Welcome to URL Shortener API");
