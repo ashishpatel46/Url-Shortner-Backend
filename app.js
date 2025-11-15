@@ -42,11 +42,11 @@ app.use(errorHandler)
 //     console.log("Server is running on http://localhost:3000");
 // })
    connectDB()
-   export default app;
+   
 
 app.get("/",(req, res)=>{
    return res.send("Welcome to URL Shortener API");
 })
 
-
+export default app;
 // GET - Redirection 
