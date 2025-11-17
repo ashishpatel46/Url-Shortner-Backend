@@ -19,7 +19,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
+      "https://url-shortner-frontend-gules.vercel.app",
       process.env.FRONTEND_URL // add deployed frontend domain in Vercel env
     ],
     credentials: true,
